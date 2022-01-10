@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace xynasd
 {
+   
     static class Program
     {
         /// <summary>
@@ -19,7 +21,13 @@ namespace xynasd
             Application.Run(new Form2());
         }
     }
-  
+    static class Koll
+    {
+        public static string Text;
+    }
+
+
+
     class Base
     {
         public static string Twenty()
@@ -32,6 +40,8 @@ namespace xynasd
 
             string connStr = $"server={Host};port={Port};user={Polz};" + $"database={DB};password={Pass};";
             return connStr;
+
+
         }
     }
 }

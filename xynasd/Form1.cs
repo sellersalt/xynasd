@@ -51,7 +51,6 @@ namespace xynasd
         }
         public void reload_list()
         {
-           
             Table();
         }
 
@@ -76,6 +75,11 @@ namespace xynasd
         {
             Form5 De = new Form5();
             De.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

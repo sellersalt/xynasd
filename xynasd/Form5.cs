@@ -34,7 +34,7 @@ namespace xynasd
                 string Name = reader[1].ToString();
              
 
-                one.Items.Add($"{id_tovara}) {Name}");
+                one.Items.Add($"{id_tovara} - {Name}");
 
 
             }

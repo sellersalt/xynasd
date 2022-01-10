@@ -26,7 +26,8 @@ namespace xynasd
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form6 tovar = new Form6();
+            tovar.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -44,6 +45,19 @@ namespace xynasd
         {
             Form1 assortiment = new Form1();
             assortiment.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form7 Sotrudnik = new Form7();
+            Sotrudnik.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form10 Postavshiki = new Form10();
+            Postavshiki.ShowDialog();
+
         }
     }
 }

@@ -133,6 +133,16 @@ namespace xynasd.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap free_icon_vote_3571305 {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-vote-3571305", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap premium_icon_add_button_4817360 {
             get {
                 object obj = ResourceManager.GetObject("premium-icon-add-button-4817360", resourceCulture);

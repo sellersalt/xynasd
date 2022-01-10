@@ -6,31 +6,35 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace xynasd
 {
-    public partial class Form3 : Form
+    public partial class Form9 : Form
     {
         MySqlConnection conn = new MySqlConnection(Base.Twenty());
-        public Form3()
+        public Form9()
         {
             InitializeComponent();
+        }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //Определяем значение переменных для записи в БД
-            string n_id = textBox1.Text;
-            string n_name = textBox2.Text;
-            string n_vid = textBox3.Text;
-            string n_kol = textBox4.Text;
-            string n_ostatok = textBox5.Text;
-            string n_reit = textBox6.Text;
+            string s_id = textBox1.Text;
+            string s_name = textBox2.Text;
+            string s_tele = textBox3.Text;
+            string s_em = textBox4.Text;
+            string s_okld = textBox5.Text;
             //Формируем запрос на изменение
-            string sql_update_current_stud = $"INSERT INTO assortiment (id_tovara, Name, Vid_Ceni, Kol_vo, Ostatok, Reiting_Prodaj) " +
-                                            $"VALUES ('{n_id}', '{n_name}', '{n_vid}', '{n_kol}', '{n_ostatok}', '{n_reit}')";
+            string sql_update_current_stud = $"INSERT INTO Sotrudniki (s_kod, s_fio, s_telephone, s_email, s_oklad) " +
+                                            $"VALUES ('{s_id}', '{s_name}', '{s_tele}', '{s_em}', '{s_okld}')";
             // устанавливаем соединение с БД
             conn.Open();
             // объект для выполнения SQL-запроса
@@ -48,7 +52,22 @@ namespace xynasd
             this.Close();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
