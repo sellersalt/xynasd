@@ -13,12 +13,12 @@ using MySql.Data.MySqlClient;
 
 namespace xynasd
 {
-    public partial class Form2 : Form
+    public partial class Menu : Form
     {
-       
 
+        
     
-        public Form2()
+        public Menu()
         {
             InitializeComponent();
            
@@ -26,19 +26,20 @@ namespace xynasd
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form6 tovar = new Form6();
+            Form11 tovar = new Form11();
             tovar.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+          
 
         }
       
 
         private void Form2_Load(object sender, EventArgs e)
         {
-         
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -58,6 +59,35 @@ namespace xynasd
             Form10 Postavshiki = new Form10();
             Postavshiki.ShowDialog();
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form14 Client = new Form14();
+            Client.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form16 Prodajam = new Form16();
+            Prodajam.ShowDialog();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form17 Pribil = new Form17();
+            Pribil.ShowDialog();
         }
     }
 }

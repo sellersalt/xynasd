@@ -11,23 +11,22 @@ using MySql.Data.MySqlClient;
 
 namespace xynasd
 {
-   
-    public partial class Form6 : Form
+    public partial class Form12 : Form
     {
-        MySqlConnection conn = new MySqlConnection(Base.Twenty());
-        public Form6()
+        public Form12()
         {
             InitializeComponent();
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        MySqlConnection conn = new MySqlConnection(Base.Twenty());
+        private void button1_Click(object sender, EventArgs e)
         {
+
             //Объявлем переменную для запроса в БД
-            string s_kod = textBox1.Text;
+            string p_kod = textBox1.Text;
             // устанавливаем соединение с БД
             conn.Open();
             // запрос
-            string sql = $"SELECT s_fio, s_email FROM Sotrudniki WHERE s_kod={s_kod}";
+            string sql = $"SELECT p_Name, s_Country FROM postavchiki WHERE cod_postavki={p_kod}";
             // объект для выполнения SQL-запроса
             MySqlCommand command = new MySqlCommand(sql, conn);
             // объект для чтения ответа сервера
@@ -38,39 +37,40 @@ namespace xynasd
                 // элементы массива [] - это значения столбцов из запроса SELECT
                 textBox7.Text = reader[0].ToString();
                 textBox6.Text = reader[1].ToString();
-               
+
             }
             reader.Close(); // закрываем reader
             // закрываем соединение с БД
             conn.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             //Получаем айди сотрудника
-            string skod = textBox1.Text;
+            string pcod = textBox1.Text;
             //Меняем фио сотруднику
-            string sfio = textBox2.Text;
+            string pcon = textBox2.Text;
             //Получаем новое количество
-            string stel = textBox2.Text;
+            string ptov = textBox3.Text;
             //Получаем новоый рейтинг
-            string spoch = textBox3.Text;
+            string pkol = textBox4.Text;
             //Получаем новоый рейтинг
-            string oklad = textBox3.Text;
-            
+            string psum = textBox5.Text;
+
             // устанавливаем соединение с БД
             conn.Open();
             // запрос обновления данных
-            string query2 = $"UPDATE Sotrudniki SET s_fio = '{sfio}',s_telephone = '{stel}',s_email = '{spoch}', s_oklad = '{oklad}'  WHERE s_kod = {skod}";
+            string query2 = $"UPDATE postavchiki SET s_Country= '{pcon}',Tovar = '{ptov}',Kol_vo_tovara = '{pkol}', Summa = '{psum}'  WHERE cod_postavki = {pcod}";
             // объект для выполнения SQL-запроса
             MySqlCommand command = new MySqlCommand(query2, conn);
             // выполняем запрос
             command.ExecuteNonQuery();
             // закрываем подключение к БД
             conn.Close();
+            this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
         }

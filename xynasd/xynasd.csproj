@@ -49,35 +49,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="assoriment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="assoriment.Designer.cs">
+      <DependentUpon>assoriment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form10.cs">
+    <Compile Include="Form14.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form10.Designer.cs">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <Compile Include="Form14.Designer.cs">
+      <DependentUpon>Form14.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Form16.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Form16.Designer.cs">
+      <DependentUpon>Form16.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="Form17.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Form17.Designer.cs">
+      <DependentUpon>Form17.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="Form18.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Form18.Designer.cs">
+      <DependentUpon>Form18.cs</DependentUpon>
     </Compile>
     <Compile Include="Form5.cs">
       <SubType>Form</SubType>
@@ -85,61 +85,112 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="p_update.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="p_update.Designer.cs">
+      <DependentUpon>p_update.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="p_add.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="p_add.Designer.cs">
+      <DependentUpon>p_add.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form8.cs">
+    <Compile Include="Postavshiki.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="Postavshiki.Designer.cs">
+      <DependentUpon>Postavshiki.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form9.cs">
+    <Compile Include="Tovar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <Compile Include="Tovar.Designer.cs">
+      <DependentUpon>Tovar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="a_add.Designer.cs">
+      <DependentUpon>a_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="a_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="a_update.Designer.cs">
+      <DependentUpon>a_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_update.Designer.cs">
+      <DependentUpon>s_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sotrudniku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sotrudniku.Designer.cs">
+      <DependentUpon>Sotrudniku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_kol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_kol.Designer.cs">
+      <DependentUpon>s_kol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_add.Designer.cs">
+      <DependentUpon>s_add.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="assoriment.resx">
+      <DependentUpon>assoriment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form10.resx">
-      <DependentUpon>Form10.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Form14.resx">
+      <DependentUpon>Form14.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="p_update.resx">
+      <DependentUpon>p_update.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="p_add.resx">
+      <DependentUpon>p_add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <EmbeddedResource Include="Postavshiki.resx">
+      <DependentUpon>Postavshiki.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_add.resx">
+      <DependentUpon>a_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="a_update.resx">
+      <DependentUpon>a_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_update.resx">
+      <DependentUpon>s_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sotrudniku.resx">
+      <DependentUpon>Sotrudniku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_kol.resx">
+      <DependentUpon>s_kol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_add.resx">
+      <DependentUpon>s_add.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -151,6 +202,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Tovar.resx">
+      <DependentUpon>Tovar.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -223,6 +277,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\free-icon-vote-3571305.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium-icon-add-to-cart-5412585.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium-icon-edit-3808637.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium-icon-edit-3756640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium-icon-edit-3756640 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium-icon-edit-3756640 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8gVVzma8NC8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daniel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-product-description-1670993.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

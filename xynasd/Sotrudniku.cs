@@ -28,16 +28,20 @@ namespace xynasd
             index_selected_rows = dataGridView1.SelectedCells[0].RowIndex.ToString();
             //ID конкретной записи в Базе данных, на основании индекса строки
             id_selected_rows = dataGridView1.Rows[Convert.ToInt32(index_selected_rows)].Cells[0].Value.ToString();
-           
+
+
         }
-        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        public void DeleteS(string s_kodd)
         {
-            //Магические строки
-            dataGridView1.CurrentCell = dataGridView1[e.ColumnIndex, e.RowIndex];
-            dataGridView1.CurrentRow.Selected = true;
-            //Метод получения ID выделенной строки в глобальную переменную
-            GetSelectedIDString();
+            //Формируем строку запроса на добавление строк
+            string sql_delete_user = "DELETE FROM Sotrudniki WHERE s_kod='" + s_kodd + "'";
+            //Посылаем запрос на обновление данных
+            MySqlCommand delete_user = new MySqlCommand(sql_delete_user, conn);
+            conn.Open();
+            delete_user.ExecuteNonQuery();
+            conn.Close();
         }
+
 
         public void Table()
         {
@@ -57,7 +61,13 @@ namespace xynasd
                 }
 
             conn.Close();
-            
+
+            dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
         }
         public void reload_list()
         {
@@ -67,12 +77,13 @@ namespace xynasd
 
         private void Form7_Load(object sender, EventArgs e)
         {
+            dataGridView1.RowHeadersVisible = false;
             Table();
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {      
-           
+        {
+            DeleteS(id_selected_rows);
             reload_list();
         }
 
@@ -104,6 +115,25 @@ namespace xynasd
         {
             Form6 form9 = new Form6();
             form9.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            //Магические строки
+            dataGridView1.CurrentCell = dataGridView1[e.ColumnIndex, e.RowIndex];
+            dataGridView1.CurrentRow.Selected = true;
+            //Метод получения ID выделенной строки в глобальную переменную
+            GetSelectedIDString();
+        }
+
+        private void dataGridView1_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
         }
     }
 }

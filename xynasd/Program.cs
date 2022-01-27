@@ -18,7 +18,7 @@ namespace xynasd
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Application.Run(new Menu());
         }
     }
     static class Koll
@@ -26,7 +26,7 @@ namespace xynasd
         public static string Text;
     }
 
-
+    
 
     class Base
     {
@@ -40,7 +40,6 @@ namespace xynasd
 
             string connStr = $"server={Host};port={Port};user={Polz};" + $"database={DB};password={Pass};";
             return connStr;
-
 
         }
     }
