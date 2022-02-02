@@ -14,6 +14,8 @@ namespace xynasd
     public partial class Form11 : Form
     {
         string id_selected_rows = "0";
+      
+        
         public void GetSelectedIDString()
         {
             //Переменная для индекс выбранной строки в гриде
@@ -161,8 +163,7 @@ namespace xynasd
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form18 form18 = new Form18();
-            form18.Show();
+           
         }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -197,6 +198,13 @@ namespace xynasd
         {
             Form5 form5 = new Form5();
             form5.Show();
+        }
+
+        
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
         }
     }
 }

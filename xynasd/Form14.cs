@@ -67,7 +67,7 @@ namespace xynasd
         public void DeleteS(string s_kodd)
         {
             //Формируем строку запроса на добавление строк
-            string sql_delete_user = "DELETE FROM klient WHERE c_id='" + s_kodd + "'";
+            string sql_delete_user = "DELETE FROM client WHERE c_id='" + s_kodd + "'";
             //Посылаем запрос на обновление данных
             MySqlCommand delete_user = new MySqlCommand(sql_delete_user, conn);
             conn.Open();
@@ -98,6 +98,18 @@ namespace xynasd
         {
             DeleteS(id_selected_rows);
             reload_list();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form18 form18 = new Form18();
+            form18.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form19 form19 = new Form19();
+            form19.Show();
         }
     }
 }

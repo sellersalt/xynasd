@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace xynasd
 {
-   
+
     static class Program
     {
         /// <summary>
@@ -25,9 +25,13 @@ namespace xynasd
     {
         public static string Text;
     }
+    class Sale
+    {
+        public void sell()
+        {
 
-    
-
+        }
+    }
     class Base
     {
         public static string Twenty()
