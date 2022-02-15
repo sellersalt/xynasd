@@ -163,7 +163,8 @@ namespace xynasd
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
+            Form13 form13 = new Form13();
+            form13.Show();
         }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)

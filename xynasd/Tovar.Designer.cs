@@ -43,9 +43,9 @@ namespace xynasd
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 90);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(486, 363);
+            this.dataGridView1.Size = new System.Drawing.Size(524, 342);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
@@ -73,12 +73,15 @@ namespace xynasd
             this.button9.BackColor = System.Drawing.Color.Transparent;
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Image = global::xynasd.Properties.Resources.free_icon_product_description_1670993;
-            this.button9.Location = new System.Drawing.Point(392, 17);
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Image = global::xynasd.Properties.Resources.free_icon_product_description_1670993__1_;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button9.Location = new System.Drawing.Point(374, 17);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(54, 46);
+            this.button9.Size = new System.Drawing.Size(72, 59);
             this.button9.TabIndex = 24;
+            this.button9.Text = "Описание";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -88,11 +91,14 @@ namespace xynasd
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Image = global::xynasd.Properties.Resources.premium_icon_add_to_cart_5412585;
+            this.button3.Image = global::xynasd.Properties.Resources.free_icon_buying_decision_3310042;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button3.Location = new System.Drawing.Point(452, 17);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(46, 46);
+            this.button3.Size = new System.Drawing.Size(67, 59);
             this.button3.TabIndex = 23;
+            this.button3.Text = "Покупка";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -102,9 +108,9 @@ namespace xynasd
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.ImageLocation = "";
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(504, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(542, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(454, 415);
+            this.pictureBox1.Size = new System.Drawing.Size(416, 415);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -122,7 +128,7 @@ namespace xynasd
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form11";
-            this.Text = "Form11";
+            this.Text = "Товары";
             this.Load += new System.EventHandler(this.Form11_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -45,20 +45,20 @@ namespace xynasd
 
         public void Table()
         {
-            string sql = $"SELECT s_kod AS Код, s_fio AS 'ФИО', s_telephone AS 'Телефон', s_email AS 'Почта', s_oklad AS 'Оклад' FROM Sotrudniki";
+            string sql = $"SELECT s_kod AS 'Код', s_fio AS 'ФИО', s_telephone AS 'Телефон', s_email AS 'Почта', s_oklad AS 'Оклад' FROM Sotrudniki";
            
                 conn.Open();
                 MySqlDataAdapter IDataAdapter = new MySqlDataAdapter(sql, conn);
                 DataSet dataset = new DataSet();
                 IDataAdapter.Fill(dataset);
                 dataGridView1.DataSource = dataset.Tables[0];
-           
-                int count_rows = dataGridView1.RowCount - 0;
-                label1.Text = (count_rows).ToString();
-                for (int i = 0; i < count_rows; i++)
-                {
-                    int kol = Convert.ToInt32(dataGridView1.Rows[i].Cells[0].Value);
-                }
+
+            int count_rows = dataGridView1.RowCount - 0;
+            label1.Text = (count_rows).ToString();
+            for (int i = 0; i < count_rows; i++)
+            {
+                int kol = Convert.ToInt32(dataGridView1.Rows[i].Cells[0].Value);
+            }
 
             conn.Close();
 

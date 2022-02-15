@@ -114,14 +114,14 @@ namespace xynasd
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(585, 450);
+            this.ClientSize = new System.Drawing.Size(585, 412);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form14";
-            this.Text = "Form14";
+            this.Text = "Клиент";
             this.Load += new System.EventHandler(this.Form14_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

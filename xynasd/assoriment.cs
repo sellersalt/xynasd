@@ -40,7 +40,9 @@ namespace xynasd
         public void Table()
         {
 
-            string sql = $"SELECT id_tovara AS Код, Name AS 'Название', Vid_Ceni AS 'Вид цены', Kol_vo AS 'Количество' , Ostatok AS 'Остаток', Reiting_Prodaj AS 'Рейтинг Продаж'  FROM assortiment";
+            string sql = $"SELECT Tovar.t_articul AS Код, Name AS 'Название', Vid_Ceni AS 'Вид цены', Kol_vo AS 'Количество' , Tovar.t_ostatok AS 'Остаток', Reiting_Prodaj AS 'Рейтинг Продаж'  FROM assortiment INNER JOIN Tovar ON assortiment.id_tov = Tovar.id_tov ";
+               
+               
             try
             {
                 conn.Open();
@@ -87,8 +89,7 @@ namespace xynasd
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Form3 Add = new Form3();
-            Add.Show();
+            
         }
       
         private void button3_Click(object sender, EventArgs e)
@@ -98,8 +99,7 @@ namespace xynasd
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form4 Ue = new Form4();
-            Ue.Show();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

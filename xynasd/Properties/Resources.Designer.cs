@@ -83,9 +83,29 @@ namespace xynasd.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap free_icon_buying_decision_3310042 {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-buying-decision-3310042", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_icon_product_description_1670993 {
             get {
                 object obj = ResourceManager.GetObject("free-icon-product-description-1670993", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap free_icon_product_description_1670993__1_ {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-product-description-1670993 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +253,16 @@ namespace xynasd.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap premium_icon_dollar_5926585 {
+            get {
+                object obj = ResourceManager.GetObject("premium-icon-dollar-5926585", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap premium_icon_edit_3756640 {
             get {
                 object obj = ResourceManager.GetObject("premium-icon-edit-3756640", resourceCulture);
@@ -286,6 +316,16 @@ namespace xynasd.Properties {
         internal static System.Drawing.Bitmap premium_icon_employee_3417361__1_ {
             get {
                 object obj = ResourceManager.GetObject("premium-icon-employee-3417361 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap premium_icon_euro_5926544 {
+            get {
+                object obj = ResourceManager.GetObject("premium-icon-euro-5926544", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

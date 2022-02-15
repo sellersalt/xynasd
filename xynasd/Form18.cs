@@ -22,15 +22,15 @@ namespace xynasd
         private void button1_Click(object sender, EventArgs e)
         {
             //Определяем значение переменных для записи в БД
-            string n_id = textBox1.Text;
+            
             string fio = textBox2.Text;
             string email = textBox3.Text;
             string comp = textBox4.Text;
-            string sex = textBox5.Text;
+            
             
             //Формируем запрос на изменение
-            string sql_update_current_stud = $"INSERT INTO client (c_id, c_fio, c_email, c_comp, c_sex) " +
-                                            $"VALUES ('{n_id}', '{fio}', '{email}', '{comp}', '{sex}')";
+            string sql_update_current_stud = $"INSERT INTO client (c_fio, c_email, c_comp)" +
+                                            $"VALUES ('{fio}', '{email}', '{comp}')";
             // устанавливаем соединение с БД
             conn.Open();
             // объект для выполнения SQL-запроса

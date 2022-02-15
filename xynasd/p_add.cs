@@ -20,16 +20,16 @@ namespace xynasd
         MySqlConnection conn = new MySqlConnection(Base.Twenty());
         private void button1_Click(object sender, EventArgs e)
         {
-            string p_id = textBox1.Text;
+            
             string p_name = textBox2.Text;
             string p_coun = textBox3.Text;
             string p_tovar = textBox4.Text;
-            string p_data = textBox5.Text;
+            string p_data = maskedTextBox1.Text;
             string p_kol = textBox6.Text;
             string p_summa = textBox7.Text;
             //Формируем запрос на изменение
-            string sql_update_current_stud = $"INSERT INTO postavchiki (cod_postavki, p_Name, s_Country, Tovar, data_postuplenia_v_magaz, Kol_vo_tovara, Summa) " +
-                                            $"VALUES ('{p_id}', '{p_name}', '{p_coun}', '{p_tovar}', '{p_data}', '{p_kol}', '{p_summa}')";
+            string sql_update_current_stud = $"INSERT INTO postavchiki (p_name, s_Country, Tovar, data_postuplenia_v_magaz, Kol_vo_tovara, Summa) " +
+                                            $"VALUES ('{p_name}', '{p_coun}', '{p_tovar}', '{p_data}', '{p_kol}', '{p_summa}')";
             //Определяем значение переменных для записи в БД
 
             // устанавливаем соединение с БД
