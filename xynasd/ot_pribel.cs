@@ -28,6 +28,29 @@ namespace xynasd
         {
 
         }
+        public void postov1()
+        {
+            conn.Open();
+            // запрос 
+            string sql = $"SELECT COUNT(*) FROM Tovar";
+            // объект для выполнения SQL-запроса 
+            MySqlCommand command = new MySqlCommand(sql, conn);
+            // объект для чтения ответа сервера 
+            MySqlDataReader reader = command.ExecuteReader();
+            // читаем результат 
+            while (reader.Read())
+            {
+                ;
+                // элементы массива [] - это значения столбцов из запроса SELECT 
+                label14.Text = reader[0].ToString();
+
+            }
+            reader.Close(); // закрываем reader 
+            // закрываем соединение с БД 
+            conn.Close();
+
+        }
+
         public void postov()
         {
             conn.Open();
@@ -127,6 +150,11 @@ namespace xynasd
             sotrudnku();
             postov();
 
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
 
         }
     }
