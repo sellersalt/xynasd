@@ -248,7 +248,7 @@ namespace xynasd
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Name = "Form12";
-            this.Text = "Form12";
+            this.Text = "Изменить поставщика";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

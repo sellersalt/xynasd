@@ -55,53 +55,47 @@
     <Compile Include="assoriment.Designer.cs">
       <DependentUpon>assoriment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form13.cs">
+    <Compile Include="sale.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form13.Designer.cs">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <Compile Include="sale.Designer.cs">
+      <DependentUpon>sale.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form14.cs">
+    <Compile Include="client.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form14.Designer.cs">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <Compile Include="client.Designer.cs">
+      <DependentUpon>client.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form15.cs">
+    <Compile Include="ot_sale.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form15.Designer.cs">
-      <DependentUpon>Form15.cs</DependentUpon>
+    <Compile Include="ot_sale.Designer.cs">
+      <DependentUpon>ot_sale.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form16.cs">
+    <Compile Include="ot_pribel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form16.Designer.cs">
-      <DependentUpon>Form16.cs</DependentUpon>
+    <Compile Include="ot_pribel.Designer.cs">
+      <DependentUpon>ot_pribel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form17.cs">
+    <Compile Include="add_client.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form17.Designer.cs">
-      <DependentUpon>Form17.cs</DependentUpon>
+    <Compile Include="add_client.Designer.cs">
+      <DependentUpon>add_client.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form18.cs">
+    <Compile Include="up_client.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form18.Designer.cs">
-      <DependentUpon>Form18.cs</DependentUpon>
+    <Compile Include="up_client.Designer.cs">
+      <DependentUpon>up_client.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form19.cs">
+    <Compile Include="desk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form19.Designer.cs">
-      <DependentUpon>Form19.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form5.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="desk.Designer.cs">
+      <DependentUpon>desk.cs</DependentUpon>
     </Compile>
     <Compile Include="p_update.cs">
       <SubType>Form</SubType>
@@ -162,29 +156,26 @@
     <EmbeddedResource Include="assoriment.resx">
       <DependentUpon>assoriment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form13.resx">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <EmbeddedResource Include="sale.resx">
+      <DependentUpon>sale.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form14.resx">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <EmbeddedResource Include="client.resx">
+      <DependentUpon>client.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form15.resx">
-      <DependentUpon>Form15.cs</DependentUpon>
+    <EmbeddedResource Include="ot_sale.resx">
+      <DependentUpon>ot_sale.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form16.resx">
-      <DependentUpon>Form16.cs</DependentUpon>
+    <EmbeddedResource Include="ot_pribel.resx">
+      <DependentUpon>ot_pribel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form17.resx">
-      <DependentUpon>Form17.cs</DependentUpon>
+    <EmbeddedResource Include="add_client.resx">
+      <DependentUpon>add_client.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form18.resx">
-      <DependentUpon>Form18.cs</DependentUpon>
+    <EmbeddedResource Include="up_client.resx">
+      <DependentUpon>up_client.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form19.resx">
-      <DependentUpon>Form19.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="desk.resx">
+      <DependentUpon>desk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="p_update.resx">
       <DependentUpon>p_update.cs</DependentUpon>
@@ -337,6 +328,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\premium-icon-euro-5926544.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck-animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -83,6 +83,26 @@ namespace xynasd.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download__1_ {
+            get {
+                object obj = ResourceManager.GetObject("download (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_icon_buying_decision_3310042 {
             get {
                 object obj = ResourceManager.GetObject("free-icon-buying-decision-3310042", resourceCulture);
@@ -386,6 +406,16 @@ namespace xynasd.Properties {
         internal static System.Drawing.Bitmap premium_icon_update_4059903 {
             get {
                 object obj = ResourceManager.GetObject("premium-icon-update-4059903", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap truck_animation {
+            get {
+                object obj = ResourceManager.GetObject("truck-animation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

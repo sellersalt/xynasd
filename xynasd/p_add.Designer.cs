@@ -200,7 +200,7 @@ namespace xynasd
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Добавление поставщика";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

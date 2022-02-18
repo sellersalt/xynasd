@@ -76,7 +76,7 @@ namespace xynasd
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listBox1);
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "Описание";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

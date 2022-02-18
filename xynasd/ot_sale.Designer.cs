@@ -38,9 +38,9 @@ namespace xynasd
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Peru;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 103);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(554, 242);
+            this.dataGridView1.Size = new System.Drawing.Size(554, 284);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
@@ -51,9 +51,9 @@ namespace xynasd
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.Gainsboro;
             this.button3.Image = global::xynasd.Properties.Resources.premium_icon_update_4059903;
-            this.button3.Location = new System.Drawing.Point(520, 54);
+            this.button3.Location = new System.Drawing.Point(572, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(46, 36);
+            this.button3.Size = new System.Drawing.Size(43, 284);
             this.button3.TabIndex = 21;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -63,11 +63,11 @@ namespace xynasd
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Peru;
-            this.ClientSize = new System.Drawing.Size(578, 353);
+            this.ClientSize = new System.Drawing.Size(619, 306);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form16";
-            this.Text = "Form16";
+            this.Text = "Отчет прибыли";
             this.Load += new System.EventHandler(this.Form16_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

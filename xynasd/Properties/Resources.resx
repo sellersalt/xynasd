@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="premium-icon-shopping-list-5432799" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\premium-icon-shopping-list-5432799.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="truck-animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\truck-animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="premium-icon-update-4059903" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\premium-icon-update-4059903.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,6 +133,12 @@
   <data name="8gVVzma8NC8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8gVVzma8NC8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="free-icon-removed-1092833" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-removed-1092833.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Daniel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Daniel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,6 +147,9 @@
   </data>
   <data name="premium-icon-add-button-4817360" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\premium-icon-add-button-4817360.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premium-icon-shopping-list-5432799" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premium-icon-shopping-list-5432799.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="premium-icon-edit-3756640 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\premium-icon-edit-3756640 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,11 +163,11 @@
   <data name="free-icon-think-4642831" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-think-4642831.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="premium-icon-customer-satisfaction-2973772" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\premium-icon-customer-satisfaction-2973772.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="premium-icon-employee-3417361" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premium-icon-employee-3417361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="premium-icon-edit-3756640 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\premium-icon-edit-3756640 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="premium-icon-euro-5926544" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premium-icon-euro-5926544.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="premium-icon-dollar-5926585" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\premium-icon-dollar-5926585.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +178,8 @@
   <data name="free-icon-vote-3571305" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-vote-3571305.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="free-icon-removed-1092833" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-icon-removed-1092833.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="premium-icon-customer-satisfaction-2973772" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premium-icon-customer-satisfaction-2973772.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="free-icon-product-description-1670993" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-product-description-1670993.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,13 +217,13 @@
   <data name="free-icon-shopping-items-2649244" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-shopping-items-2649244.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="premium-icon-employee-3417361" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\premium-icon-employee-3417361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="premium-icon-edit-3756640 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premium-icon-edit-3756640 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="premium-icon-assortment-5729795 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\premium-icon-assortment-5729795 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="premium-icon-euro-5926544" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\premium-icon-euro-5926544.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

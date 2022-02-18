@@ -21,5 +21,10 @@ namespace xynasd
         {
             label1.Text = Koll.Text;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

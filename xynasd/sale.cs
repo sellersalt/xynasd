@@ -11,9 +11,10 @@ using MySql.Data.MySqlClient;
 
 namespace xynasd
 {
-    public partial class Form16 : Form
+    public partial class Form13 : Form
     {
         MySqlConnection conn = new MySqlConnection(Base.Twenty());
+
         string id_selected_rows = "0";
         public void GetSelectedIDString()
         {
@@ -26,14 +27,10 @@ namespace xynasd
 
 
         }
-        public Form16()
-        {
-            InitializeComponent();
-        }
         public void Table()
         {
 
-            string sql = $"SELECT os_id AS 'Артикуль' , os_name AS 'Название', Tovar.t_sale AS 'Продано', Tovar.t_ostatok AS 'Остаток', os_zakupka AS 'Закупка', Tovar.t_itog AS 'Прибыль' FROM ot_sale INNER JOIN Tovar ON ot_sale.os_id = Tovar.t_articul";
+            string sql = $"SELECT t_articul AS Артикуль, t_name AS 'Наименованте', t_cena AS 'Цена', t_ostatok AS 'Остаток' FROM Tovar";
             try
             {
                 conn.Open();
@@ -51,7 +48,7 @@ namespace xynasd
             }
             catch
             {
-                MessageBox.Show("Ошибка подключения");
+                
             }
             finally
             {
@@ -63,11 +60,71 @@ namespace xynasd
         {
             Table();
         }
-        private void Form16_Load(object sender, EventArgs e)
+        public Form13()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+                //Ввод артикуля
+                string pcod = textBox1.Text;
+                //Кол-во товара
+                string kol = textBox2.Text;
+                
+                
+                // устанавливаем соединение с БД
+                conn.Open();
+                // запрос обновления данных
+                string query2 = $"UPDATE Tovar SET t_sale = {kol} + t_sale, t_itog = t_itog + {kol}, t_ostatok = t_ostatok - {kol},t_itog = t_cena * {kol} + t_itog WHERE t_articul = {pcod}";
+                
+                MySqlCommand command = new MySqlCommand(query2, conn);
+                // выполняем запрос
+                command.ExecuteNonQuery();
+                
+                // закрываем подключение к БД
+                conn.Close();
+                reload_list();
+            
+            
+            try
+            {
+                //Вводим фио покупателя
+                string fio = textBox3.Text;
+                //Вводим компанию
+                string comp = textBox4.Text;
+                //Вводим почта
+                string email = textBox5.Text;
+                //Вводим дату покупки
+                string cData = maskedTextBox1.Text;
+                
+                // устанавливаем соединение с БД
+                conn.Open();
+                // запрос обновления данных
+                string query4 = $"INSERT INTO client (c_fio, c_comp, c_email, c_date, c_kol) " +
+                                            $"VALUES ('{fio}', '{comp}', '{email}', '{cData}', '{kol}')";
+
+                MySqlCommand command3 = new MySqlCommand(query4, conn);
+                // выполняем запрос
+                command3.ExecuteNonQuery();
+                // закрываем подключение к БД
+                conn.Close();
+                reload_list();
+
+                MessageBox.Show("Покупка совершена \n" + textBox3.Text);
+            }
+            catch
+            {
+
+            }
+
+        }
+
+        private void Form13_Load(object sender, EventArgs e)
         {
             dataGridView1.RowHeadersVisible = false;
             Table();
-
         }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -83,12 +140,5 @@ namespace xynasd
         {
             reload_list();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-
-        }
     }
-   
 }

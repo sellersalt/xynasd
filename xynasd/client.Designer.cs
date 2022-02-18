@@ -41,7 +41,7 @@ namespace xynasd
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkSlateGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 98);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(562, 340);
             this.dataGridView1.TabIndex = 0;
@@ -54,7 +54,7 @@ namespace xynasd
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.Gainsboro;
             this.button3.Image = global::xynasd.Properties.Resources.premium_icon_update_4059903;
-            this.button3.Location = new System.Drawing.Point(528, 56);
+            this.button3.Location = new System.Drawing.Point(528, 14);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(46, 36);
             this.button3.TabIndex = 21;
@@ -69,7 +69,7 @@ namespace xynasd
             this.button2.ForeColor = System.Drawing.Color.Gainsboro;
             this.button2.Image = global::xynasd.Properties.Resources.free_icon_removed_1092833;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(289, 56);
+            this.button2.Location = new System.Drawing.Point(298, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 36);
             this.button2.TabIndex = 20;
@@ -85,7 +85,7 @@ namespace xynasd
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
             this.button1.Image = global::xynasd.Properties.Resources.free_icon_resize_3532457;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(133, 56);
+            this.button1.Location = new System.Drawing.Point(142, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 36);
             this.button1.TabIndex = 19;
@@ -101,7 +101,7 @@ namespace xynasd
             this.button9.ForeColor = System.Drawing.Color.Gainsboro;
             this.button9.Image = global::xynasd.Properties.Resources.premium_icon_add_button_4817360;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(12, 56);
+            this.button9.Location = new System.Drawing.Point(12, 14);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(150, 36);
             this.button9.TabIndex = 18;
@@ -114,7 +114,7 @@ namespace xynasd
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(585, 412);
+            this.ClientSize = new System.Drawing.Size(585, 403);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
