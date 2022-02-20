@@ -28,27 +28,36 @@ namespace xynasd
         {
 
         }
-        public void postov1()
+        public void sale()
         {
-            conn.Open();
-            // запрос 
-            string sql = $"SELECT COUNT(*) FROM Tovar";
-            // объект для выполнения SQL-запроса 
-            MySqlCommand command = new MySqlCommand(sql, conn);
-            // объект для чтения ответа сервера 
-            MySqlDataReader reader = command.ExecuteReader();
-            // читаем результат 
-            while (reader.Read())
+
+            string sql = $"SELECT DISTINCTROW assortiment.Name AS 'Товары', SUM(Tovar.t_sale) AS 'Продано' FROM Tovar INNER JOIN assortiment ON Tovar.id_tov = assortiment.id_tov GROUP BY assortiment.`Name`";
+
+
+            try
             {
-                ;
-                // элементы массива [] - это значения столбцов из запроса SELECT 
-                label14.Text = reader[0].ToString();
+                conn.Open();
+                MySqlDataAdapter IDataAdapter = new MySqlDataAdapter(sql, conn);    
+                DataSet dataset = new DataSet();
+                IDataAdapter.Fill(dataset);
+                dataGridView1.DataSource = dataset.Tables[0];
+
+                dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dataGridView1.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
             }
-            reader.Close(); // закрываем reader 
-            // закрываем соединение с БД 
-            conn.Close();
+            catch
+            {
+               
+            }
+            finally
+            {
+                conn.Close();
 
+            }
         }
 
         public void postov()
@@ -149,8 +158,10 @@ namespace xynasd
             CLient();
             sotrudnku();
             postov();
+            sale();
 
-
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
         }
 
         private void label15_Click(object sender, EventArgs e)

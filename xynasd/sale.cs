@@ -102,8 +102,8 @@ namespace xynasd
                 // устанавливаем соединение с БД
                 conn.Open();
                 // запрос обновления данных
-                string query4 = $"INSERT INTO client (c_fio, c_comp, c_email, c_date, c_kol) " +
-                                            $"VALUES ('{fio}', '{comp}', '{email}', '{cData}', '{kol}')";
+                string query4 = $"INSERT INTO client (c_fio, c_comp, c_email, c_date, c_kol, с_nZakaz) " +
+                                            $"VALUES ('{fio}', '{comp}', '{email}', '{cData}', '{kol}', '{pcod}')";
 
                 MySqlCommand command3 = new MySqlCommand(query4, conn);
                 // выполняем запрос
