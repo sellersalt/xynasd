@@ -47,5 +47,10 @@ namespace xynasd
         {
             this.Close();
         }
+
+        private void Form18_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -23,6 +23,7 @@ namespace xynasd
         {
 
         }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -31,9 +32,10 @@ namespace xynasd
             string s_tele = maskedTextBox1.Text;
             string s_em = textBox4.Text;
             string s_okld = textBox5.Text;
+            string s_dolj = comboBox1.Text;
             //Формируем запрос на изменение
-            string sql_update_current_stud = $"INSERT INTO Sotrudniki (s_fio, s_telephone, s_email, s_oklad) " +
-                                            $"VALUES ('{s_name}', '{s_tele}', '{s_em}', '{s_okld}')";
+            string sql_update_current_stud = $"INSERT INTO Sotrudniki (s_fio, s_telephone, s_email, s_oklad, s_doljnost) " +
+                                            $"VALUES ('{s_name}', '{s_tele}', '{s_em}', '{s_okld}', '{s_dolj}')";
             // устанавливаем соединение с БД
             conn.Open();
             // объект для выполнения SQL-запроса

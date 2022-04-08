@@ -22,7 +22,7 @@ namespace xynasd
         public void Table()
         {
 
-            string sql = $"SELECT c_id AS Код, c_fio AS 'ФИО', c_email AS 'Почта', c_comp AS 'Компания', c_date AS 'Дата покупики', с_nZakaz AS 'Номер заказа', c_kol AS 'Количество купленного товара' FROM client";
+            string sql = $"SELECT c_id AS Код, c_fio AS 'ФИО', c_email AS 'Почта', c_comp AS 'Компания', c_date AS 'Дата покупики', с_nZakaz AS 'Номер заказа', c_kol AS 'Количество купленного товара', c_prodavec AS 'Продавец' FROM client";
             try
             {
                 conn.Open();

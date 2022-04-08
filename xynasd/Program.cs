@@ -36,11 +36,11 @@ namespace xynasd
     {
         public static string Twenty()
         {
-            const string Host = "caseum.ru";
+            const string Host = "chuc.caseum.ru";
             const int Port = 33333;
-            const string Polz = "st_2_20_19";
-            const string DB = "st_2_20_19";
-            const string Pass = "72279361";
+            const string Polz = "st_2_19_20";
+            const string DB = "is_2_19_st20_KURS";
+            const string Pass = "21252198";
 
             string connStr = $"server={Host};port={Port};user={Polz};" + $"database={DB};password={Pass};";
             return connStr;

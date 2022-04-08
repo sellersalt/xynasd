@@ -44,6 +44,8 @@ namespace xynasd
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,20 +55,20 @@ namespace xynasd
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(300, 387);
+            this.dataGridView1.Size = new System.Drawing.Size(300, 246);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(318, 37);
+            this.textBox1.Location = new System.Drawing.Point(324, 37);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(318, 88);
+            this.textBox2.Location = new System.Drawing.Point(508, 37);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(161, 20);
             this.textBox2.TabIndex = 2;
@@ -78,7 +80,7 @@ namespace xynasd
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
             this.button1.Image = global::xynasd.Properties.Resources.free_icon_think_4642831;
-            this.button1.Location = new System.Drawing.Point(428, 354);
+            this.button1.Location = new System.Drawing.Point(566, 209);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(51, 45);
             this.button1.TabIndex = 23;
@@ -92,7 +94,7 @@ namespace xynasd
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.Gainsboro;
             this.button3.Image = global::xynasd.Properties.Resources.premium_icon_update_4059903;
-            this.button3.Location = new System.Drawing.Point(506, 363);
+            this.button3.Location = new System.Drawing.Point(623, 213);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(46, 36);
             this.button3.TabIndex = 24;
@@ -102,7 +104,7 @@ namespace xynasd
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(318, 12);
+            this.label1.Location = new System.Drawing.Point(322, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 25;
@@ -111,7 +113,7 @@ namespace xynasd
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(318, 72);
+            this.label2.Location = new System.Drawing.Point(505, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 26;
@@ -119,7 +121,7 @@ namespace xynasd
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(318, 141);
+            this.textBox3.Location = new System.Drawing.Point(324, 96);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(160, 20);
             this.textBox3.TabIndex = 27;
@@ -127,7 +129,7 @@ namespace xynasd
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(318, 125);
+            this.label3.Location = new System.Drawing.Point(322, 71);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 28;
@@ -136,7 +138,7 @@ namespace xynasd
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(318, 183);
+            this.label4.Location = new System.Drawing.Point(505, 71);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 29;
@@ -144,14 +146,14 @@ namespace xynasd
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(316, 199);
+            this.textBox4.Location = new System.Drawing.Point(507, 96);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(162, 20);
             this.textBox4.TabIndex = 30;
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(318, 328);
+            this.maskedTextBox1.Location = new System.Drawing.Point(508, 159);
             this.maskedTextBox1.Mask = "0000-00-00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(161, 20);
@@ -160,7 +162,7 @@ namespace xynasd
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(315, 303);
+            this.label5.Location = new System.Drawing.Point(505, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 13);
             this.label5.TabIndex = 32;
@@ -168,7 +170,7 @@ namespace xynasd
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(315, 261);
+            this.textBox5.Location = new System.Drawing.Point(322, 159);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(162, 20);
             this.textBox5.TabIndex = 33;
@@ -176,18 +178,38 @@ namespace xynasd
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(315, 245);
+            this.label6.Location = new System.Drawing.Point(322, 131);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 34;
             this.label6.Text = "Почта";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(321, 228);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(163, 21);
+            this.comboBox1.TabIndex = 35;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(322, 209);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 13);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Выбор сотрудника";
             // 
             // Form13
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(564, 411);
+            this.ClientSize = new System.Drawing.Size(683, 270);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
@@ -229,5 +251,7 @@ namespace xynasd
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label7;
     }
 }

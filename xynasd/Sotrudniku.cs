@@ -45,7 +45,7 @@ namespace xynasd
 
         public void Table()
         {
-            string sql = $"SELECT s_kod AS 'Код', s_fio AS 'ФИО', s_telephone AS 'Телефон', s_email AS 'Почта', s_oklad AS 'Оклад' FROM Sotrudniki";
+            string sql = $"SELECT s_kod AS 'Код', s_fio AS 'ФИО', s_telephone AS 'Телефон', s_email AS 'Почта', s_oklad AS 'Оклад', s_procent AS 'Добавка к зарплате', s_doljnost AS 'Должность'  FROM Sotrudniki";
            
                 conn.Open();
                 MySqlDataAdapter IDataAdapter = new MySqlDataAdapter(sql, conn);

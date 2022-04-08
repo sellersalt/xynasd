@@ -138,6 +138,7 @@ namespace xynasd
             this.Controls.Add(this.textBox2);
             this.Name = "Form18";
             this.Text = "Добавление клиента";
+            this.Load += new System.EventHandler(this.Form18_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

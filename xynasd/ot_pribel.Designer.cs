@@ -262,6 +262,7 @@ namespace xynasd
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form17";
             this.Text = "Отчет";
             this.Load += new System.EventHandler(this.Form17_Load);

@@ -27,6 +27,19 @@ namespace xynasd
 
 
         }
+   
+        public void Sod()
+        {
+            string sql = $"SELECT s_fio FROM Sotrudniki";
+            
+            conn.Open();
+            MySqlDataAdapter IDataAdapter = new MySqlDataAdapter(sql, conn);
+            DataSet dataset = new DataSet();
+            IDataAdapter.Fill(dataset);
+            comboBox1.ValueMember = "s_fio";
+            comboBox1.DataSource = dataset.Tables[0];
+            conn.Close();
+        }
         public void Table()
         {
 
@@ -98,12 +111,13 @@ namespace xynasd
                 string email = textBox5.Text;
                 //Вводим дату покупки
                 string cData = maskedTextBox1.Text;
-                
+                //Выбор продавца
+                string pro = comboBox1.Text;
                 // устанавливаем соединение с БД
                 conn.Open();
                 // запрос обновления данных
-                string query4 = $"INSERT INTO client (c_fio, c_comp, c_email, c_date, c_kol, с_nZakaz) " +
-                                            $"VALUES ('{fio}', '{comp}', '{email}', '{cData}', '{kol}', '{pcod}')";
+                string query4 = $"INSERT INTO client (c_fio, c_comp, c_email, c_date, c_kol, с_nZakaz, c_prodavec) " +
+                                            $"VALUES ('{fio}', '{comp}', '{email}', '{cData}', '{kol}', '{pcod}', '{pro}')";
 
                 MySqlCommand command3 = new MySqlCommand(query4, conn);
                 // выполняем запрос
@@ -118,6 +132,7 @@ namespace xynasd
             {
 
             }
+           
 
         }
 
@@ -125,6 +140,7 @@ namespace xynasd
         {
             dataGridView1.RowHeadersVisible = false;
             Table();
+            Sod();
         }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -139,6 +155,11 @@ namespace xynasd
         private void button3_Click(object sender, EventArgs e)
         {
             reload_list();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
